@@ -1,4 +1,4 @@
--- Cria o banco de dados
+-- Criação o banco de dados
 CREATE DATABASE db_rh;
 USE db_rh;
 
@@ -51,7 +51,6 @@ SELECT * FROM tb_colaboradores
 INNER JOIN tb_departamento 
 ON tb_colaboradores.departamento_id = tb_departamento.id;
 
--- Maior e Menor Salario
+-- Consultar colaborador com Maior e Menor Salario
 SELECT nome, salario AS maior_salario FROM tb_colaboradores ORDER BY salario DESC LIMIT 1;
 SELECT nome, salario AS menor_salario FROM tb_colaboradores ORDER BY salario ASC LIMIT 1;
-

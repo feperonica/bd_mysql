@@ -51,7 +51,7 @@ SELECT * FROM tb_estudantes WHERE nota < 7.0 ORDER BY nota ASC;
 UPDATE tb_estudantes SET nota = 7.5 WHERE id = "7";
 
 -- INNER JOIN para exibir estudantes junto com o nome da turma
-SELECT e.nome, e.nota, t.nome_turma AS turma
-FROM tb_estudantes AS e
-INNER JOIN tb_turmas AS t
-ON e.turma_id = t.id;
+SELECT estudantes.nome, estudantes.nota, turma.nome_turma AS turma
+FROM tb_estudantes AS estudantes
+INNER JOIN tb_turmas AS turma
+ON estudantes.turma_id = turma.id;

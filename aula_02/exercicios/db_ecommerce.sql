@@ -1,5 +1,3 @@
-DROP DATABASE db_ecommerce;
-
 -- Criação do banco de dados
 CREATE DATABASE db_ecommerce;
 USE db_ecommerce;
