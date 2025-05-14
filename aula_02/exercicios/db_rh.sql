@@ -52,5 +52,8 @@ INNER JOIN tb_departamento
 ON tb_colaboradores.departamento_id = tb_departamento.id;
 
 -- Consultar colaborador com Maior e Menor Salario
-SELECT nome, salario AS maior_salario FROM tb_colaboradores ORDER BY salario DESC LIMIT 1;
-SELECT nome, salario AS menor_salario FROM tb_colaboradores ORDER BY salario ASC LIMIT 1;
+SELECT nome, salario AS maior_salario 
+FROM tb_colaboradores ORDER BY salario DESC LIMIT 1;
+
+SELECT nome, salario AS menor_salario 
+FROM tb_colaboradores ORDER BY salario ASC LIMIT 1;
